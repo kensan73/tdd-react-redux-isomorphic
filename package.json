@@ -2,7 +2,7 @@
   "name": "redux-search-application",
   "version": "1.0.0",
   "description": "Sample Redux Isomorphic Search Application.",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
     "lint": "esw src test -c .eslintrc --ext .js --ext .jsx",
     "build:semantic": "cd semantic && gulp build",
