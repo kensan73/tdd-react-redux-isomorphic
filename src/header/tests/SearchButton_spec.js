@@ -18,5 +18,11 @@ describe('SearchButton', () => {
 
       expect(searchButton.html()).toBe(null);
     });
+
+    it('should not render when there are just spaces for query', () => {
+      const searchButton = shallow(<SearchButton query="              " />);
+
+      expect(searchButton.html()).toBe(null);
+    });
   });
 });
