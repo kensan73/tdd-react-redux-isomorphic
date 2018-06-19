@@ -12,5 +12,11 @@ describe('SearchButton', () => {
 
       expect(searchButton.html()).toBe('<button class="search-button">Search</button>');
     });
+
+    it('should not render when there is an empty query', () => {
+      const searchButton = shallow(<SearchButton query="" />);
+
+      expect(searchButton.html()).toBe(null);
+    });
   });
 });
