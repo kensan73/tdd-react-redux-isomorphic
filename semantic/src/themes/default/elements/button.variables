@@ -26,7 +26,7 @@
 @textColor: rgba(0, 0, 0, 0.6);
 @textShadow: none;
 @invertedTextShadow: @textShadow;
-@borderRadius: 9999px;
+@borderRadius: @defaultBorderRadius;
 @verticalAlign: baseline;
 
 /* Internal Shadow */
@@ -96,6 +96,10 @@
 @focusBoxShadow: '';
 @focusColor: @hoveredTextColor;
 @iconFocusOpacity: 0.85;
+
+/* Disabled */
+@disabledBackgroundImage: none;
+@disabledBoxShadow: none;
 
 /* Pressed Down */
 @downBackgroundColor: #BABBBC;
@@ -321,6 +325,16 @@
 @secondaryTextColor: @invertedTextColor;
 @secondaryTextShadow: @invertedTextShadow;
 @secondaryBoxShadow: @coloredBoxShadow;
+
+@positiveBackgroundImage: @coloredBackgroundImage;
+@positiveTextColor: @invertedTextColor;
+@positiveTextShadow: @invertedTextShadow;
+@positiveBoxShadow: @coloredBoxShadow;
+
+@negativeBackgroundImage: @coloredBackgroundImage;
+@negativeTextColor: @invertedTextColor;
+@negativeTextShadow: @invertedTextShadow;
+@negativeBoxShadow: @coloredBoxShadow;
 
 /* Compact */
 @compactVerticalPadding: (@verticalPadding * 0.75);
