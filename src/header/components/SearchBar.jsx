@@ -1,7 +1,8 @@
 import React from 'react';
 import AutocompleteResultsList from './AutocompleteResultsList';
+import SearchButton from './SearchButton';
 
-const SearchBar = ({ handleKeyDown, handleValueChange, handleSearch, query }) => {
+const SearchBar = ({handleKeyDown, handleValueChange, handleSearch, query}) => {
   return (
     <div className="search-container">
       <div className="ui search-bar">
@@ -13,6 +14,7 @@ const SearchBar = ({ handleKeyDown, handleValueChange, handleSearch, query }) =>
           onChange={handleValueChange}
           onKeyDown={handleKeyDown}
         />
+        <SearchButton query={query} />
       </div>
     </div>
   );
