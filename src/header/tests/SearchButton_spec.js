@@ -7,5 +7,10 @@ import SearchButton from '../components/SearchButton';
 
 describe('SearchButton', () => {
   describe('SearchButton conditional display', () => {
+    it('should render when there is a non-empty query', () => {
+      const searchButton = shallow(<SearchButton query="some query" />);
+
+      expect(searchButton.html()).toBe('<button class="search-button">Search</button>');
+    });
   });
 });
