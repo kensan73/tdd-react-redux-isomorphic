@@ -1,6 +1,5 @@
 import React from 'react';
 import AutocompleteResultsList from './AutocompleteResultsList';
-import SearchButton from './Button';
 
 const SearchBar = ({ handleKeyDown, handleValueChange, handleSearch, query }) => {
   return (
@@ -14,11 +13,6 @@ const SearchBar = ({ handleKeyDown, handleValueChange, handleSearch, query }) =>
           onChange={handleValueChange}
           onKeyDown={handleKeyDown}
         />
-        { query.trim() !== '' ? 
-            <SearchButton buttonText="Search" classNames="search-button" handleClick={handleSearch} />
-            : 
-            null
-        }
       </div>
     </div>
   );
