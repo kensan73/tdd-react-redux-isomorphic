@@ -5,7 +5,7 @@ import sinon from 'sinon';
 
 import SearchButton from '../components/SearchButton';
 
-describe('Button', () => {
-  describe('Button behavior', () => {
+describe('SearchButton', () => {
+  describe('SearchButton conditional display', () => {
   });
 });
